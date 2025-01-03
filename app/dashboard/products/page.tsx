@@ -25,7 +25,7 @@ export default async function ProductsRoute() {
             <Button asChild className="flex items-center gap-x-2" >
                 <Link href="/dashboard/products/create">
                 <PlusCircle className="w-3.5 h-3.5"/>
-                <span >add product</span>
+                <span >Add Product</span>
                 </Link>
             </Button>
         </div>
@@ -56,7 +56,7 @@ export default async function ProductsRoute() {
                             </TableCell>
                             <TableCell>{item.name}</TableCell>
                             <TableCell>{item.status} </TableCell>
-                            <TableCell> {item.price}</TableCell>
+                            <TableCell>${item.price}</TableCell>
                             <TableCell>{new Intl.DateTimeFormat("en-US").format(item.createdAt)}</TableCell>
                             <TableCell className="text-end">
                                 <DropdownMenu>

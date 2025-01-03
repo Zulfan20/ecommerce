@@ -153,7 +153,7 @@ export default function ProductCreateRoute() {
 
                                 </div>
                             ): (
-                                <UploadDropzone endpoint="bannerImageRoute" 
+                                <UploadDropzone endpoint="imageUploader" 
                             onClientUploadComplete={(res) => {
                                 setImages(res.map((r) => r.url))
                             }}
